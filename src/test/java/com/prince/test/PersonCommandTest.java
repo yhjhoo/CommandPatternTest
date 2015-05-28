@@ -22,7 +22,7 @@ public class PersonCommandTest {
 	public static void main(String[] arg) throws InterruptedException {
 		PersonCommand personCommand = new PersonCommand();
 		PersonService personService = new PersonService();
-		for(int i=0; i<10; i++){
+		for(int i=0; i<2; i++){
 			System.out.println("Main" + i);
 			MultiThread m = new MultiThread("T" + i, personCommand, personService);
 //			m.run();
